@@ -1,0 +1,12 @@
+[package]
+name = 'hangeulr'
+version = '0.1.0'
+edition = '2021'
+
+[lib]
+crate-type = [ 'staticlib' ]
+name = 'hangeulr'
+
+[dependencies]
+extendr-api = '*'
+hwp = "0.2.0"
