@@ -8,5 +8,5 @@ crate-type = [ 'staticlib' ]
 name = 'hangeulr'
 
 [dependencies]
-extendr-api = '*'
+extendr-api = '0.4.0'
 hwp = "0.2.0"
