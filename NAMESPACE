@@ -3,4 +3,4 @@
 S3method("$",RVersion)
 S3method("[[",RVersion)
 export(RVersion)
-useDynLib(hangeulr, .registration = TRUE)
+useDynLib(hwpr, .registration = TRUE)

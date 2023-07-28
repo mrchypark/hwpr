@@ -146,14 +146,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hangeulr"
-version = "0.1.0"
-dependencies = [
- "extendr-api",
- "hwp",
-]
-
-[[package]]
 name = "hwp"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -174,6 +166,14 @@ name = "hwp_macro"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0ed4792f8dbdd54a16be92a992a8a99e05dde9a0c01f0d180ba985014879af22"
+
+[[package]]
+name = "hwpr"
+version = "0.1.0"
+dependencies = [
+ "extendr-api",
+ "hwp",
+]
 
 [[package]]
 name = "inout"

@@ -1,11 +1,11 @@
 [package]
-name = 'hangeulr'
+name = 'hwpr'
 version = '0.1.0'
 edition = '2021'
 
 [lib]
 crate-type = [ 'staticlib' ]
-name = 'hangeulr'
+name = 'hwpr'
 
 [dependencies]
 extendr-api = '0.4.0'

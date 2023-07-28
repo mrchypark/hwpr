@@ -4,11 +4,11 @@
 
 #
 # This file was created with the following call:
-#   .Call("wrap__make_hangeulr_wrappers", use_symbols = TRUE, package_name = "hangeulr")
+#   .Call("wrap__make_hwpr_wrappers", use_symbols = TRUE, package_name = "hwpr")
 
 #' @docType package
 #' @usage NULL
-#' @useDynLib hangeulr, .registration = TRUE
+#' @useDynLib hwpr, .registration = TRUE
 NULL
 
 #' Return string `"Hello world!"` to R.

@@ -1,7 +1,7 @@
 TARGET_DIR = ./rust/target
 LIBDIR = $(TARGET_DIR)/release
-STATLIB = $(LIBDIR)/libhangeulr.a
-PKG_LIBS = -L$(LIBDIR) -lhangeulr
+STATLIB = $(LIBDIR)/libhwpr.a
+PKG_LIBS = -L$(LIBDIR) -lhwpr
 
 all: C_clean
 
