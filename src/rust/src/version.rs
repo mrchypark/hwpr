@@ -6,8 +6,11 @@ pub struct RVersion(pub Version);
 
 #[extendr]
 impl RVersion {
-  fn majer(&self) -> u8 {
-      self.0.major
+  fn from_str(version: &str) -> Self {
+    RVersion(Version::from_str(version)).clone()
+  }
+  fn major(&self) -> u8 {
+    self.0.major
   }
   fn minor(&self) -> u8 {
     self.0.minor

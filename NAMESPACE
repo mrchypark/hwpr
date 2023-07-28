@@ -2,5 +2,4 @@
 
 S3method("$",RVersion)
 S3method("[[",RVersion)
-export(RVersion)
 useDynLib(hwpr, .registration = TRUE)

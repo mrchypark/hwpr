@@ -11,14 +11,20 @@
 #' @useDynLib hwpr, .registration = TRUE
 NULL
 
-#' Return string `"Hello world!"` to R.
-#' @export
 RVersion <- new.env(parent = emptyenv())
 
-RVersion$majer <- function() .Call(wrap__RVersion__majer, self)
+RVersion$from_str <- function(version) .Call(wrap__RVersion__from_str, version)
 
-#' @rdname RVersion
-#' @usage NULL
+RVersion$major <- function() .Call(wrap__RVersion__major, self)
+
+RVersion$minor <- function() .Call(wrap__RVersion__minor, self)
+
+RVersion$micro <- function() .Call(wrap__RVersion__micro, self)
+
+RVersion$build_number <- function() .Call(wrap__RVersion__build_number, self)
+
+RVersion$to_string <- function() .Call(wrap__RVersion__to_string, self)
+
 #' @export
 `$.RVersion` <- function (self, name) { func <- RVersion[[name]]; environment(func) <- environment(); func }
 
