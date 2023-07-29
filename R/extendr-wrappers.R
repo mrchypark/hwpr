@@ -11,25 +11,21 @@
 #' @useDynLib hwpr, .registration = TRUE
 NULL
 
-RVersion <- new.env(parent = emptyenv())
+HWPReader <- new.env(parent = emptyenv())
 
-RVersion$from_str <- function(version) .Call(wrap__RVersion__from_str, version)
+HWPReader$new <- function(path) .Call(wrap__HWPReader__new, path)
 
-RVersion$major <- function() .Call(wrap__RVersion__major, self)
+HWPReader$find_all <- function() .Call(wrap__HWPReader__find_all, self)
 
-RVersion$minor <- function() .Call(wrap__RVersion__minor, self)
+HWPReader$find_all2 <- function() .Call(wrap__HWPReader__find_all2, self)
 
-RVersion$micro <- function() .Call(wrap__RVersion__micro, self)
-
-RVersion$build_number <- function() .Call(wrap__RVersion__build_number, self)
-
-RVersion$to_string <- function() .Call(wrap__RVersion__to_string, self)
+HWPReader$find_all3 <- function() .Call(wrap__HWPReader__find_all3, self)
 
 #' @export
-`$.RVersion` <- function (self, name) { func <- RVersion[[name]]; environment(func) <- environment(); func }
+`$.HWPReader` <- function (self, name) { func <- HWPReader[[name]]; environment(func) <- environment(); func }
 
 #' @export
-`[[.RVersion` <- `$.RVersion`
+`[[.HWPReader` <- `$.HWPReader`
 
 
 # nolint end

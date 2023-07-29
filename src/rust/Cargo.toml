@@ -10,3 +10,4 @@ name = 'hwpr'
 [dependencies]
 extendr-api = '0.4.0'
 hwp = "0.2.0"
+libR-sys = { version = "0.4.0", features = ["clang"] }

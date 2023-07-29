@@ -21,12 +21,12 @@ impl RVersion {
   fn build_number(&self) -> u8 {
     self.0.build_number
   }
-  fn to_string(&self) -> String {
+  pub fn to_string(&self) -> String {
     self.0.to_string()
   }
 }
 
 extendr_module! {
-  mod version;
+  mod rversion;
   impl RVersion;
 }
