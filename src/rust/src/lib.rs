@@ -1,7 +1,7 @@
-mod rversion;
+mod version;
 
 use extendr_api::prelude::*;
-use rversion::RVersion;
+use version::RVersion;
 use hwp::HWP;
 
 use std::fs;

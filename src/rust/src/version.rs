@@ -27,6 +27,6 @@ impl RVersion {
 }
 
 extendr_module! {
-  mod rversion;
+  mod version;
   impl RVersion;
 }
